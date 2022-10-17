@@ -120,8 +120,8 @@ const Title = ({ data }) => {
       {/* /* Displaying the title of the product.  */}
       <h1>{data.title}</h1>
       <div className="title_priceContainer">
-        {/* <p className="title_priceNow"> $ {agregarpunto(data.price)} </p> /*
-        Displaying the price of the product. */ }
+         <p className="title_priceNow"> $ {agregarpunto(data.price)} </p> 
+        {/* Displaying the price of the product.  */}
         <p className="title_priceAfter">
           $ {agregarpunto(data.compare_at_price_max)}{" "}
         </p>
