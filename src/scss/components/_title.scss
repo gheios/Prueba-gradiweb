@@ -1,54 +1,66 @@
+/* Importing the mediaQueries.scss file and assigning it to the variable media. */
 @use '../abstracts/mediaQueries' as media;
 
 
+/* Setting the width to 90%, the height to auto and the margin to 3rem auto. */
 .title_container{
    width:90%;
    height: auto;
    margin: 3rem auto;
 
 }
+/* Setting the opacity to 0.3 and the font-weight to bold. */
 .title_colaboration{
    opacity: 0.3;
    font-weight: bold;
 }
 
+/* Setting the display to flex, the margin-top to 1rem and the gap to 1rem. */
 .title_priceContainer{
 display: flex;
 margin-top: 1rem;
 gap: 1rem;
 }
+/* Setting the font-size to 1.5rem and the font-weight to 500. */
 .title_priceNow{
    font-size: 1.5rem;
    font-weight: 500;
 }
 
+/* Setting the text-decoration-line to line-through, the opacity to 0.5 and the font-size to 1.2rem. */
 .title_priceAfter{
    text-decoration-line: line-through;
    opacity: 0.5;
    font-size: 1.2rem;
 }
 
+/* Setting the margin-top to 2.5rem, the border to 1px solid black and the opacity to 0.1. */
 .title_line{
    margin-top: 2.5rem;
    border: 1px solid black;
    opacity: 0.1;
 }
+/* Setting the margin-top to 1rem, the border to 1px solid black and the opacity to 0.1. */
 .title_line2{
    margin-top: 1rem;
    border: 1px solid black;
    opacity: 0.1;
 }
+/* Setting the margin-top to 2rem, the border to 1px solid black and the opacity to 0.1. */
 .title_line3{
    margin-top: 2rem;
    border: 1px solid black;
    opacity: 0.1;
 }
+/* Setting the font-size to 1.3rem. */
 .title_colorLabel{
    p{ 
       font-size: 1.3rem;
    }
   
 }
+/* Setting the padding to 2rem 0, the display to flex, the justify-content to left and the align-items
+to center. */
 .title_colorContainer{
    padding: 2rem 0;
    display: flex;
@@ -56,6 +68,12 @@ gap: 1rem;
    align-items: center;
 }
 
+/* Setting the width to 35px, the height to 35px, the display to none, the border-radius to 50%, the
+margin-left to 1rem, the display to flex, the justify-content to center, the align-items to center,
+the padding to 2px, the background-color to #e62e1b, the background-color to #000000, the
+background-color to #cccccc, the width to calc(100% - 6px), the height to calc(100% - 6px), the
+border-radius to 50%, the display to inline-block, the opacity to 1, the display to none and the
+border to 3px solid white. */
 .title_customBtn{
    width: 35px;
    height: 35px;
@@ -93,6 +111,9 @@ gap: 1rem;
       display: none;
    }
 
+ /* Setting the border to 3px solid white, the transition to opacity 0.5s ease, the
+ -webkit-box-shadow to 0px 0px 0px 3px rgba(0,0,0,1), the -moz-box-shadow to 0px 0px 0px 3px
+ rgba(0,0,0,1) and the box-shadow to 0px 0px 0px 3px rgba(0,0,0,1). */
   input:checked+.checkmark{
    border: 3px solid white;
    transition:  opacity 0.5s ease;
@@ -126,6 +147,8 @@ box-shadow: 0px 0px 0px 3px rgba(0,0,0,1);
          margin-left: 2rem;
       }
 
+   /* Setting the border to 1px solid black, the color to black, the padding to 0.6rem, the
+   opacity to 0.6, the text-align to center, the font-size to 1rem and the width to 45px. */
       .title_size{
           border: 1px solid black;
          color:  black ;
@@ -144,11 +167,14 @@ box-shadow: 0px 0px 0px 3px rgba(0,0,0,1);
 
    }
 
+/* Setting the border to 3px solid black, the text-align to center, the color to black, the padding to
+0.6rem and the opacity to 1. */
    .selected{
       border: 3px solid black;
       text-align: center;
       color:  black ;
       padding: 0.6rem; 
+   /* Setting the display to flex, the padding to 2rem 0 1rem 0. */
       opacity: 1;
    }
    .title_quantityContainer{
@@ -156,6 +182,10 @@ box-shadow: 0px 0px 0px 3px rgba(0,0,0,1);
       padding: 2rem 0 1rem 0;
    }
 
+/* Setting the width to 30%, the display to flex, the gap to 1rem, the border-width to 1px,
+the border-style to solid, the border-color to rgb(0,0,0,0.3), the padding to 0.4rem, the
+font-weight
+to 700 and the justify-content to center. */
   .title_count{
    width: 30%;
    display: flex;
@@ -164,6 +194,8 @@ box-shadow: 0px 0px 0px 3px rgba(0,0,0,1);
    border-style: solid;
    border-color:rgb(0,0,0,0.3);
    padding: 0.4rem;
+  /* Setting the display to flex, the width to 70%, the gap to 0.5rem, the text-align to right,
+  the padding to 0.4rem, the justify-content to end and the opacity to 0.7. */
    font-weight: 700;
    justify-content: center;
   }
@@ -177,6 +209,8 @@ box-shadow: 0px 0px 0px 3px rgba(0,0,0,1);
   justify-content: end;
   opacity: 0.7;
   }
+/* Setting the padding to 1rem 0, the width to 100%, the display to grid, the
+grid-template-columns to auto, the gap to 1rem and the display to flex. */
   .title_buttonsContainer{
    padding: 1rem 0;
   width: 100%;

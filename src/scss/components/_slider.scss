@@ -1,7 +1,9 @@
+/* Importing the mediaQueries.scss file and assigning it to the variable media. */
 @use '../abstracts/mediaQueries' as media;
 
 
 
+/* The slider for the mobile version. */
  .slider_carousel{
     width: 90%;
    height:450px; 
@@ -10,11 +12,13 @@
  margin-top: 1rem;
  object-fit: contain;
  position: relative;
+
  @include media.desktop{
    display: none;
  }
  }
 
+/* Hiding the slider_gallery class on mobile and showing it on desktop. */
 .slider_gallery{
  width:90%;
  height: 60%;
@@ -26,6 +30,7 @@
  }
 
 
+ /* Styling the featured image. */
  .slider_featurImage{
    height: 100%;
    width: 90%;
@@ -33,6 +38,7 @@
  background-size: cover;
  }
 }
+/* Creating a grid with 3 columns and a gap of 1rem. */
 
 .slider_imagesContainer{
    margin-top: 1rem;
@@ -50,6 +56,7 @@
 
 }
 
+/* Styling the images in the slider. */
 .slider_slide{
     width: 100%;
     height: 100%;
@@ -68,6 +75,7 @@
    opacity: 0.7;
 }
 
+/* Styling the right arrow. */
 .slider_rightArrow{
    position: absolute;
    top: 50%;
@@ -78,10 +86,12 @@
    cursor: pointer;
    opacity: 0.7;
 }
+/* Centering the dots. */
 .slider_dotsContainer{
    display: flex;
    justify-content: center;
 }
+/* Styling the dots. */
 .slider_dots{
    
   margin:1rem 0.4rem;

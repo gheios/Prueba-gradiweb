@@ -1,5 +1,12 @@
+/* Importing the mediaQueries.scss file and renaming it to media. */
 @use "../abstracts/mediaQueries" as media;
 
+/* Setting the width and height of the modal overlay to 100% of the viewport. It is also setting the
+position to fixed, so that it will stay in the same place when the user scrolls. It is also setting
+the top and left to 0, so that it will be in the top left corner of the viewport. It is also setting
+the background color to a semi-transparent black. It is also setting the display to flex, so that
+the modal container will be centered. It is also setting the align-items and align-content to
+center, so that the modal container will be centered. */
 .modal_overley{
    width: 100vw;
    height: 100vh;
@@ -11,6 +18,13 @@
    align-items: center;
    align-content: center;
 }
+/* Setting the width and height of the modal container to 70% and 60% of the viewport. It is also
+setting the background color to white. It is also setting the border radius to 5px. It is also
+setting the box shadow to a semi-transparent black. It is also setting the padding to 1rem. It is
+also setting the margin to 0 auto, so that it will be centered. It is also setting the display to
+grid, so that the modal container will be a grid. It is also setting the grid-template-columns to
+auto, so that the columns will be the same size. It is also setting the gap to 0.5rem, so that there
+will be a gap between the columns. */
 .modal_container{
    width: 70%;
    height: 60%;
@@ -27,6 +41,7 @@
       text-align: center;
       padding: 0.5rem 0;
       border-bottom:solid 2px  #000000;
+  
       margin-bottom: 0.3rem;
    }
    p{
@@ -34,9 +49,13 @@
       padding-left: 1rem;
       letter-spacing: 1px;
    }
+ /* Setting the width of the modal container to 50% of the viewport when the viewport is between 768px
+ and 1024px. */
    @include media.tablet{
       width: 50%;
    }
+ /* Setting the width of the modal container to 30% of the viewport when the viewport is
+ 1024px or larger. */
    @include media.desktop{
       width: 30%;
    }

@@ -1,9 +1,12 @@
+/* Importing the media queries from the abstracts folder. */
 @use '../abstracts/mediaQueries' as media;
 
 
 .app_container{
    display: block;
 
+  /* Saying that if the screen is a tablet, then the display should be flex, the title container should
+  be 40% of the screen, and the slider container should be 50% of the screen. */
    @include media.tablet{
       display: flex;
       .title_container{
@@ -14,6 +17,9 @@
       }
    }
 
+  /* A media query. It is saying that if the screen is a desktop, then the padding should be 2rem, the
+  title container should be 40% of the screen, and the slider container should be 80% of the screen
+  and 90vh. */
    @include media.desktop{
       padding: 2rem;
       .title_container{

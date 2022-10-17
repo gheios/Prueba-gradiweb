@@ -1,11 +1,15 @@
 import React from "react";
 import { useState } from "react";
 
-const Modal = ({ varienteSelected, quantity, setCart, deleteZero }) => {
+const Modal = (/* Destructuring the props object. */
+{ varienteSelected, quantity, setCart, deleteZero }) => {
   return (
     <div className="modal_overley">
       <div className="modal_container">
-        <h2>{varienteSelected.name}</h2>
+        {/* /* A destructuring assignment.  */}
+        
+        <h2>
+        {varienteSelected.name}</h2>
         <p>
           quantity: <strong>{quantity}</strong>
         </p>
@@ -19,11 +23,13 @@ const Modal = ({ varienteSelected, quantity, setCart, deleteZero }) => {
           management: <strong>{varienteSelected.inventory_management}</strong>
         </p>
         <p>
-          total price:{" "}
+          total price:
           <strong> ${deleteZero(varienteSelected.price * quantity)}</strong>{" "}
         </p>
         <div className="model_buttonContainer">
-          <button className="modal_button" onClick={() => setCart(false)}>
+          <button className="modal_button" onClick={/* A function that is being called when the button
+          is clicked. */
+          () => setCart(false)}>
             Back
           </button>
         </div>

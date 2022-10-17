@@ -1,5 +1,6 @@
 
 
+/* Creating a mixin that is used to create a media query for tablet. */
 @mixin tablet{
    @media   screen and (min-width: 768px) {
        @content;
@@ -8,6 +9,7 @@
 }
 
 
+/* A mixin that is used to create a media query for desktop. */
 @mixin desktop{
    @media   screen and (min-width: 1280px) {
        @content;
