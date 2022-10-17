@@ -1,0 +1,58 @@
+@use "../abstracts/mediaQueries" as media;
+
+.modal_overley{
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,.5);
+   display: flex;
+   align-items: center;
+   align-content: center;
+}
+.modal_container{
+   width: 70%;
+   height: 60%;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: rgba(100,100,111,.2) 0px 7px 29px 0px;
+   padding: 1rem;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: auto;
+   gap: 0.5rem;
+   h2{
+      font-size: 1.6rem;
+      text-align: center;
+      padding: 0.5rem 0;
+      border-bottom:solid 2px  #000000;
+      margin-bottom: 0.3rem;
+   }
+   p{
+      font-size: 1rem;
+      padding-left: 1rem;
+      letter-spacing: 1px;
+   }
+   @include media.tablet{
+      width: 50%;
+   }
+   @include media.desktop{
+      width: 30%;
+   }
+}
+
+.model_buttonContainer{
+   width: 100%;
+display: flex;
+}
+.modal_button{
+   width: 90%;
+   height: auto;
+   color: #fff;
+   background-color: #000000;
+   padding: 0.5rem 0;
+   font-size: 1rem;
+ margin: 0 auto;
+
+}

@@ -1,0 +1,30 @@
+@use '../abstracts/mediaQueries' as media;
+
+
+.app_container{
+   display: block;
+
+   @include media.tablet{
+      display: flex;
+      .title_container{
+         width: 40%;
+      }
+      .slider_Container{
+         width: 50%;
+      }
+   }
+
+   @include media.desktop{
+      padding: 2rem;
+      .title_container{
+         width: 40%;
+      }
+
+      .slider_Container{
+         width:80%;
+         height: 90vh;
+      }
+   }
+
+
+}

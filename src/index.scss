@@ -1,0 +1,19 @@
+
+/* abstracts */
+@use "./scss/abstracts/variable.scss";
+@use"./scss/abstracts/mixins.scss";
+@use "./scss/abstracts/mediaQueries.scss";
+
+
+
+/*  base */
+@use "./scss/base/base.scss";
+@use "./scss/base/resets.scss";
+
+
+
+/*components */
+@use'./scss/components/App.scss';
+@use './scss/components/slider.scss';
+@use './scss/components/title.scss';
+@use './scss/components/modal.scss'
